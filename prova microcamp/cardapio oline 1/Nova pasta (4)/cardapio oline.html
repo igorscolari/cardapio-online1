@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espetaria Sabor do Fogo - Cardápio Online</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background-color: #8B0000;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .tagline {
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+        
+        .whatsapp-btn {
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .menu-section {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .section-title {
+            color: #8B0000;
+            border-bottom: 2px solid #8B0000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+        
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #ddd;
+        }
+        
+        .item-name {
+            font-weight: bold;
+            flex: 2;
+        }
+        
+        .item-desc {
+            color: #666;
+            font-size: 0.9rem;
+            flex: 3;
+            padding-right: 15px;
+        }
+        
+        .item-price {
+            font-weight: bold;
+            color: #8B0000;
+            flex: 1;
+            text-align: right;
+        }
+        
+        .checkin-section {
+            text-align: center;
+            background-color: #f8f8f8;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        
+        .checkin-title {
+            margin-bottom: 20px;
+            color: #8B0000;
+        }
+        
+        .checkin-text {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        .contact-info {
+            margin-top: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .menu-item {
+                flex-direction: column;
+            }
+            
+            .item-desc {
+                padding-right: 0;
+                margin: 10px 0;
+            }
+            
+            .item-price {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Espetaria Sabor do Fogo</div>
+        <div class="tagline">Os melhores espetinhos da região!</div>
+        <a href="https://wa.me/5511999999999?text=Olá,%20gostaria%20de%20fazer%20um%20pedido" class="whatsapp-btn" target="_blank">
+            Faça seu pedido via WhatsApp
+        </a>
+    </header>
+    
+    <div class="container">
+        <div class="menu-section">
+            <h2 class="section-title">Entradas</h2>
+            
+            <div class="menu-item">
+                <div class="item-name">Pão de Alho</div>
+                <div class="item-desc">Pão de alho caseiro com queijo derretido</div>
+                <div class="item-price">R$ 8,00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-name">Queijo Coalho</div>
+                <div class="item-desc">Queijo coalho grelhado com mel de engenho</div>
+                <div class="item-price">R$ 12,00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-name">Batata Frita</div>
+                <div class="item-desc">Porção de batata frita crocante</div>
+                <div class="item-price">R$ 10,00</div>
+            </div>
+        </div>
+        
+        <div class="menu-section">
+            <h2 class="section-title">Espetinhos</h2>
+            
+            <div class="menu-item">
+                <div class="item-name">Carne</div>
+                <div class="item-desc">Espeto de carne bovina temperada</div>
+                <div class="item-price">R$ 9,00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-name">Frango</div>
+                <div class="item-desc">Espeto de frango marinado</div>
+                <div class="item-price">R$ 8,00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-name">Linguiça</div>
+                <div class="item-desc">Espeto de linguiça toscana</div>
+                <div class="item-price">R$ 9,00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-name">Coração</div>
+                <div class="item-desc">Espeto de coração de frango</div>
+                <div class="item-price">R$ 10,00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-name">Misto</div>
+                <div class="item-desc">Carne, frango e linguiça no mesmo espeto</div>
+                <div class="item-price">R$ 11,00</div>
+            </div>
+        </div>
+        
+        <div class="menu-section">
+            <h2 class="section-title">Acompanhamentos</h2>
+            
+            <div class="menu-item">
+                <div class="item-name">Farofa</div>
+                <div class="item-desc">Farofa crocante caseira</div>
+                <div class="item-price">R$ 5,00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-name">Vinagrete</div>
+                <div class="item-desc">Vinagrete tradicional</div>
+                <div class="item-price">R$ 5,00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-name">Arroz</div>
+                <div class="item-desc">Arroz branco soltinho</div>
+                <div class="item-price">R$ 7,00</div>
+            </div>
+        </div>
+        
+        <div class="menu-section">
+            <h2 class="section-title">Bebidas</h2>
+            
+            <div class="menu-item">
+                <div class="item-name">Refrigerante (lata)</div>
+                <div class="item-desc">Coca-Cola, Guaraná, Fanta, etc.</div>
+                <div class="item-price">R$ 6,00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-name">Suco Natural</div>
+                <div class="item-desc">Laranja, Maracujá, Limão, etc.</div>
+                <div class="item-price">R$ 8,00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-name">Água</div>
+                <div class="item-desc">Água mineral com ou sem gás</div>
+                <div class="item-price">R$ 4,00</div>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-name">Cerveja (lata)</div>
+                <div class="item-desc">Skol, Brahma, Heineken, etc.</div>
+                <div class="item-price">R$ 8,00</div>
+            </div>
+        </div>
+        
+        <div class="checkin-section">
+            <h2 class="checkin-title">Check-in via WhatsApp</h2>
+            <p class="checkin-text">Chegou no restaurante? Faça seu check-in via WhatsApp e ganhe 10% de desconto no seu pedido!</p>
+            <a href="https://wa.me/5511999999999?text=Olá,%20acabei%20de%20chegar%20na%20Espetaria%20Sabor%20do%20Fogo%20e%20gostaria%20de%20fazer%20check-in." class="whatsapp-btn" target="_blank">
+                Fazer Check-in Agora
+            </a>
+        </div>
+    </div>
+    
+    <footer>
+        <div>Espetaria Sabor do Fogo</div>
+        <div class="contact-info">
+            Rua dos Espetinhos, 123 - Centro | Tel: (11) 9999-9999
+        </div>
+        <div class="contact-info">
+            Aberto de Terça a Domingo, das 18h às 23h
+        </div>
+    </footer>
+
+    <script>
+        // Função para atualizar o número de WhatsApp dinamicamente
+        document.addEventListener('DOMContentLoaded', function() {
+            const whatsappLinks = document.querySelectorAll('.whatsapp-btn');
+            const phoneNumber = '5511999999999'; // Substitua pelo número real
+            
+            whatsappLinks.forEach(link => {
+                const currentHref = link.getAttribute('href');
+                link.setAttribute('href', currentHref.replace(/5511999999999/g, phoneNumber));
+            });
+            
+            // Animação simples ao rolar
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 50) {
+                    header.style.padding = '10px 0';
+                } else {
+                    header.style.padding = '20px 0';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+</body>
+</html>
+</body>
+</html>
